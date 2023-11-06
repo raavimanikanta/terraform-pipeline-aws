@@ -1,6 +1,6 @@
 resource "newrelic_synthetics_monitor" "monitor" {
   status           = "ENABLED"
-  name             = "script-pipeline"
+  name             = "script-pipeline-nov"
   period           = "EVERY_MINUTE"
   uri              = "https://www.one.newrelic.com"
   type             = "SIMPLE"
