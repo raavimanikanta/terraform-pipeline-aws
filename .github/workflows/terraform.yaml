@@ -1,4 +1,4 @@
-name: applying
+name: Terraform Apply And Destroy
 on: 
   workflow_dispatch:
     inputs:
@@ -45,5 +45,5 @@ jobs:
       - name: terraform plan
         run: terraform plan
         
-      - name: ${{github.event.inputs.action}}
+      - name: Terraform-${{github.event.inputs.action}}
         run: terraform ${{github.event.inputs.action}} -auto-approve
