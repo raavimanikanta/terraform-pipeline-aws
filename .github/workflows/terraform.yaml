@@ -40,7 +40,7 @@ jobs:
 
 
       - name: terraform init
-        run: terraform init -reconfigure -backend-config="bucket=${{ env.BUCKET}}" -backend-config="key=${{ env.TFSTATE_FILE }}" -backend-config="region=${{ env.aws_region }}"
+        run: terraform init -reconfigure
         
       - name: terraform plan
         run: terraform plan
